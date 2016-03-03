@@ -29,9 +29,9 @@ System.register(['angular2/core', 'angular2/http', './syncmail/setting-form', '.
             SettingModel = (function () {
                 function SettingModel(http) {
                     this.http = http;
-                    this.username = 'kevin.wu@tnt.com';
+                    this.username = 'zhailei2011@gmail.com';
                     this.password = '123456';
-                    this.endpoint = 'https://Access1.tnt.com/traveler/Microsoft-Server-ActiveSync';
+                    this.endpoint = 'http://www.gmail.com';
                 }
                 SettingModel.prototype.getData = function () {
                     var self = this;
@@ -82,7 +82,7 @@ System.register(['angular2/core', 'angular2/http', './syncmail/setting-form', '.
                 ;
                 MyApp.prototype.ngAfterViewInit = function () {
                     //NProgress.start()
-                    this.child.refresh();
+                    //this.child.refresh();
                 };
                 __decorate([
                     core_1.ViewChild(list_1.List), 

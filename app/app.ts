@@ -86,6 +86,6 @@ export class MyApp{
     };
     ngAfterViewInit(){
         //NProgress.start()
-        this.child.refresh();
+        //this.child.refresh();
     }
 }

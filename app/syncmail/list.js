@@ -19,11 +19,53 @@ System.register(['angular2/core', 'angular2/http'], function(exports_1) {
                 http_1 = http_1_1;
             }],
         execute: function() {
-            data = [{ "id": "4:357838475", "To": "kevin.wu@tnt.com", "Cc": "", "From": "\"TNT Global IT Service Operations\" <tnt@service-now.com>", "Subject": "Incident INC3065112 has been assigned to you", "DateReceived": "2016-03-02T01:41:38.000Z", "DisplayTo": "", "Read": "0" }, { "id": "4:357576499", "To": "\"Helpdesk China\" <Helpdesk.China@tnt.com>", "Cc": "\"Jimmy Shen\" <jimmy.shen@tnt.com>, \"Kevin Wu\" <kevin.wu@tnt.com>, \"pvg_project\" <pvg_project@tnt.com>", "From": "\"Army Sun\" <army.sun@tnt.com>", "Subject": "Re: AU QSMC \u6570\u636e\u4e22\u5931 AU QSMC INC3065112", "DateReceived": "2016-03-01T14:59:00.000Z", "DisplayTo": "", "Read": "1" }, { "id": "4:356996375", "To": "\"Helpdesk China\" <Helpdesk.China@tnt.com>", "Cc": "\"Kevin Wu\" <kevin.wu@tnt.com>", "From": "\"Amber Qian\" <amber.qian@tnt.com>", "Subject": "Re: Fw: CN 257038390 \u8bf7\u63d0\u4f9b\u4e0b\u8fc7\u79f0\u6570\u636e REQ2605126", "DateReceived": "2016-03-01T05:45:56.000Z", "DisplayTo": "", "Read": "1" }, { "id": "4:356313786", "To": null, "Cc": "", "From": "\"Incident Management\" <SW5jaWRlbnQgTWFuYWdlbWVudA==@lnt.noninternet.sub>", "Subject": "ICS Incident Alert - Update 1 -  INC3061542 - Mobile Worker incab freezing\/rebooting", "DateReceived": "2016-02-29T11:03:16.000Z", "DisplayTo": "", "Read": "1" }];
+            data = [
+                {
+                    "id": "4:357838475",
+                    "To": "zhailei2011@gmail.com",
+                    "Cc": "",
+                    "From": "zhailei2011@gmail.com",
+                    "Subject": "Incident INC3065112 has been assigned to you",
+                    "DateReceived": "2016-03-02T01:41:38.000Z",
+                    "DisplayTo": "",
+                    "Read": "0"
+                },
+                {
+                    "id": "4:357576499",
+                    "To": "\"Helpdesk China\" <Helpdesk.China@tnt.com>",
+                    "Cc": "zhailei2011@gmail.com",
+                    "From": "zhailei2011@gmail.com",
+                    "Subject": "Re: AU QSMC 数据丢失 AU QSMC INC3065112",
+                    "DateReceived": "2016-03-01T14:59:00.000Z",
+                    "DisplayTo": "",
+                    "Read": "1"
+                },
+                {
+                    "id": "4:356996375",
+                    "To": "\"Helpdesk China\" <Helpdesk.China@tnt.com>",
+                    "Cc": "zhailei2011@gmail.com",
+                    "From": "zhailei2011@gmail.com",
+                    "Subject": "Re: Fw: CN 257038390 请提供下过称数据 REQ2605126",
+                    "DateReceived": "2016-03-01T05:45:56.000Z",
+                    "DisplayTo": "",
+                    "Read": "1"
+                },
+                {
+                    "id": "4:356313786",
+                    "To": "zhailei2011@gmail.com",
+                    "Cc": "zhailei2011@gmail.com",
+                    "From": "zhailei2011@gmail.com",
+                    "Subject": "ICS Incident Alert - Update 1 -  INC3061542 - Mobile Worker incab freezing/rebooting",
+                    "DateReceived": "2016-02-29T11:03:16.000Z",
+                    "DisplayTo": "",
+                    "Read": "1"
+                }
+            ];
             headers = new http_1.Headers({ 'Content-Type': 'application/json' });
             ListModel = (function () {
                 function ListModel(http) {
                     this.http = http;
+                    this.data = data;
                 }
                 ListModel.prototype.getList = function (options, fn) {
                     var self = this;
