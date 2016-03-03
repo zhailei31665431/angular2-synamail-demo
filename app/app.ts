@@ -8,9 +8,9 @@ const headers = new Headers({'Content-Type': 'application/json'});
 
 @Injectable()
 class SettingModel{
-    private username:string = 'kevin.wu@tnt.com';
+    private username:string = 'zhailei2011@gmail.com';
     private password:string = '123456';
-    private endpoint:string = 'https://Access1.tnt.com/traveler/Microsoft-Server-ActiveSync';
+    private endpoint:string = 'http://www.gmail.com';
     constructor(private http: Http){}
     private getData(){
         let self = this;
